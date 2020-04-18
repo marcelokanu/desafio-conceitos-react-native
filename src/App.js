@@ -73,6 +73,7 @@ export default function App() {
             
             <TouchableOpacity
               style={styles.button}
+              activeOpacity={0.6}
               onPress={() => handleLikeRepository(repository.id)}
               testID={`like-button-${repository.id}`}
             >
@@ -123,8 +124,7 @@ const styles = StyleSheet.create({
   },
   likeText: {
     fontSize: 14,
-    fontWeight: "bold",
-    marginRight: 10,
+    fontWeight: "bold"
   },
   button: {
     marginTop: 10,
@@ -132,9 +132,9 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 14,
     fontWeight: "bold",
-    marginRight: 10,
     color: "#fff",
     backgroundColor: "#7159c1",
     padding: 15,
+    textAlign:'center',
   },
 });
